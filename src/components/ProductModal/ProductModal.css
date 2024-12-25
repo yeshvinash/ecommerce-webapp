@@ -1,0 +1,20 @@
+.product-modal .modal-header {
+  padding: 10px;
+}
+.product-modal .modal-body {
+  padding: 10px;
+}
+.product-modal .modal-body p {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--black);
+}
+.product-modal .modal-body p strong {
+  color: var(--dark-gray) !important;
+}
+.product-modal .modal-title {
+  font-size: 20px;
+  color: var(--black);
+  padding-right: 10px;
+  font-weight: 600;
+}

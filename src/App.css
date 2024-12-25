@@ -1,0 +1,223 @@
+/* default css start */
+
+:root {
+  /* Fonts */
+  --primary-font: "Outfit", sans-serif;
+
+  /* Theme Colors */
+  --bg-gradient: linear-gradient(180deg, #0d0d0d 21.88%, #262626 100%);
+  --primary-blue: #207ad9;
+  --white: #ffffff;
+  --white-tint1: #f5f5f5;
+  --black: #0c0b0b;
+  --cod-black: #121212;
+  --dark-gray: #737373;
+  --light-gray: #b3b3b3;
+  --light-gray-tint1: #e6e6e6;
+  --athens-gray: #f5f5f7;
+  --link-hover: #ffffff;
+  --athens-gray: #f5f5f7;
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: url("./assets/webfonts/Outfit-Regular.woff2") format("woff2"),
+    url("./assets/webfonts/Outfit-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: url("./assets/webfonts/Outfit-Medium.woff2") format("woff2"),
+    url("./assets/webfonts/Outfit-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: url("./assets/webfonts/Outfit-SemiBold.woff2") format("woff2"),
+    url("./assets/webfonts/Outfit-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--primary-font);
+  color: var(--dark-gray);
+  font-size: 16px;
+  line-height: 1.3;
+  font-weight: 400;
+  background-color: var(--bg-white);
+}
+
+.h1,
+h1 {
+  font-size: 8rem;
+}
+.h3,
+h3 {
+  font-size: 18px;
+}
+
+.primary-font {
+  font-family: var(--primary-font);
+}
+
+.text-white {
+  color: var(--white);
+}
+
+.text-black {
+  color: var(--cod-black);
+}
+
+.bg-black {
+  background-color: var(--cod-black);
+}
+
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  outline: none;
+  text-decoration: none;
+  transition: 0.3s all;
+  /* color: var(--white); */
+}
+
+a:hover,
+a:focus {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/* MB-230 START */
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--light-gray-tint1);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-blue);
+}
+/* MB-230 END */
+
+/* Responsive start */
+
+/* container breakpoint */
+/* @media screen and (min-width: 576px) {
+  .container {
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .container {
+    max-width: 1240px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .container {
+    max-width: 1470px;
+  }
+} */
+
+@media screen and (max-width: 1799px) {
+  html {
+    font-size: 9px;
+  }
+}
+
+@media screen and (max-width: 1599px) {
+  html {
+    font-size: 8px;
+  }
+}
+
+@media screen and (max-width: 1439px) {
+  html {
+    font-size: 7px;
+  }
+}
+
+@media screen and (max-width: 1365px) {
+  html {
+    font-size: 6px;
+  }
+  .h3,
+  h3 {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  html {
+    font-size: 5px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  html {
+    font-size: 4px;
+  }
+}
